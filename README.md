@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Sneakers Store - Mobile First com Next.js
 
-## Getting Started
+Este projeto é uma página de produto de e-commerce desenvolvida com **Next.js**, aplicando na prática o conceito de **Mobile First** desde a estrutura inicial do layout até a adaptação para telas maiores.
 
-First, run the development server:
+A aplicação simula a experiência de visualização de um produto, seleção de imagens, controle de quantidade e interação com carrinho, priorizando a usabilidade em dispositivos móveis.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧠 Principais aprendizados
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Aplicação real do conceito **Mobile First**
+- Controle de estado para galeria de imagens e quantidade de produto
+- Manipulação de layout responsivo com Tailwind CSS
+- Separação clara entre Header, Main e Footer
+- Uso de `useState` para interações dinâmicas
+- Estruturação de layout pensando primeiro em telas pequenas
+- Adaptação progressiva para tablets e desktops com `md:` e `xl:`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧱 Estrutura do projeto
 
-To learn more about Next.js, take a look at the following resources:
+- **Header** com menu hamburguer funcional para mobile
+- **Main** com:
+  - Galeria dinâmica de imagens do produto
+  - Controle de quantidade
+  - Botão de adicionar ao carrinho
+  - Versão mobile e desktop bem definidas
+- **Footer** simples e institucional
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📱 Mobile First na prática
 
-## Deploy on Vercel
+Todo o layout foi construído inicialmente para telas pequenas, e depois expandido para telas maiores utilizando breakpoints do Tailwind:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Menu lateral apenas no mobile
+- Layout vertical no mobile → horizontal no desktop
+- Botões de navegação de imagens exclusivos do mobile
+- Thumbnails de imagens apenas no desktop
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📌 Próximos passos
+
+- Implementar lógica real de carrinho
+- Melhorar acessibilidade (aria-labels, semântica)
+- Criar animações suaves na troca de imagens
+- Persistência de estado do carrinho
+
+---
+
+## 👨‍💻 Autor
+
+Felipe de Lima Passarelli  
+Desenvolvedor Front-End focado em evolução contínua e boas práticas.
+
+🔗 GitHub: https://github.com/Felipe-de-Lima-Passarelli  
+🔗 LinkedIn: (adicione o link aqui)
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
